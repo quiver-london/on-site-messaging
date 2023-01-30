@@ -1,0 +1,33 @@
+.quiver-delivery-badge-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: medium;
+  padding-top: 8px;
+  gap: 8px;
+}
+
+.quiver-delivery-badge-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
+}
+
+.quiver-delivery-badge-primary-text {
+  margin: 0;
+  font-size: small;
+}
+
+.quiver-delivery-badge-secondary-text {
+  margin: 0;
+  font-size: small;
+}
+
+.quiver-delivery-badge-logo {
+  height: 20px;
+  width: auto;
+}

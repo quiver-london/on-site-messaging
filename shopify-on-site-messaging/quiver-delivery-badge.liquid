@@ -1,0 +1,23 @@
+{% comment %}
+  Renders the Quiver delivery badge for a card-product
+  Accepts:
+  - card_product: {Object} Card Product Liquid object (optional)
+  Usage:
+  {% render 'quiver-delivery-badge', card_product: card_product %}
+{% endcomment %}
+
+{%- if card_product.tags contains 'Quiver' -%}
+  <quiver-delivery-badge class="quiver-delivery-badge-wrapper">
+    <img
+      class="quiver-delivery-badge-logo"
+      src="{{ 'quiver-logo.png' | asset_url }}"
+      loading="lazy"
+      alt="Quiver logo"
+      height="20"
+      width="auto"
+    >
+    <div class="quiver-delivery-badge-text-container">
+      <p class="quiver-delivery-badge-primary-text"><b>Next Day</b>, emissionless delivery</p>
+    </div>
+  </quiver-delivery-badge>
+{% endif -%}
