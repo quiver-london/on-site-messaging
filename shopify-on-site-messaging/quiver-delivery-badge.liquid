@@ -1,12 +1,18 @@
 {% comment %}
   Renders the Quiver delivery badge for a card-product
+
   Accepts:
-  - card_product: {Object} Card Product Liquid object (optional)
+  - product: {Object} Card Product Liquid object (optional)
+
   Usage:
-  {% render 'quiver-delivery-badge', card_product: card_product %}
+  On line 200 of 'card_product.liquid' copy and paste the line below:
+  COPY THIS LINE: {% render 'quiver-delivery-badge', product: card_product %}
+
+  On line 21 of 'card_product.liquid' copy and paste the line below:
+  COPY THIS LINE: {{ 'quiver-delivery-badge.css' | asset_url | stylesheet_tag }}
 {% endcomment %}
 
-{%- if card_product.tags contains 'Quiver' -%}
+{%- if product.tags contains 'Quiver' -%}
   <quiver-delivery-badge class="quiver-delivery-badge-wrapper">
     <img
       class="quiver-delivery-badge-logo"
