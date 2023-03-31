@@ -14,6 +14,9 @@
 
 {%- if product.tags contains 'Quiver' -%}
   <quiver-delivery-badge class="quiver-delivery-badge-wrapper">
+    <div class="quiver-delivery-badge-text-container">
+      <p class="quiver-delivery-badge-primary-text">Same Day Delivery available with</p>
+    </div>
     <img
       class="quiver-delivery-badge-logo"
       src="{{ 'quiver-logo.png' | asset_url }}"
@@ -22,8 +25,5 @@
       height="20"
       width="auto"
     >
-    <div class="quiver-delivery-badge-text-container">
-      <p class="quiver-delivery-badge-primary-text"><b>Next Day</b>, emissionless delivery</p>
-    </div>
   </quiver-delivery-badge>
 {% endif -%}
